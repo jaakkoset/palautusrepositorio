@@ -1,1 +1,3 @@
 # palautusrepositorio
+
+Ohjelmistotuotannon viikkotehtävien palautusrepositorio.
