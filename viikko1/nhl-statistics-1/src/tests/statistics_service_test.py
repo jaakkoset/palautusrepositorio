@@ -19,7 +19,6 @@ class TestStatisticsService(unittest.TestCase):
     def setUp(self):
         reader = PlayerReaderStub()
         self.service = StatisticsService(reader)
-        # self.sort_by = SortBy()
 
     def test_search_hit(self):
         result = self.service.search("Pirjo Paras")
@@ -46,11 +45,6 @@ class TestStatisticsService(unittest.TestCase):
             Player("Maukka Mainio", "PHI", 4, 4),
         ]
 
-        print("Löydettyjen pisteet")
-        [print(player.points) for player in find_top]
-        print("Oikeat pisteet")
-        [print(player.points) for player in correct_top]
-
         find_top = [str(player) for player in find_top]
         correct_top = [str(player) for player in correct_top]
         self.assertEqual(find_top, correct_top)
@@ -62,11 +56,6 @@ class TestStatisticsService(unittest.TestCase):
             Player("Niko Nopea", "LOL", 2, 7),
             Player("Maukka Mainio", "PHI", 4, 4),
         ]
-
-        print("Löydettyjen pisteet")
-        [print(player.points) for player in find_top]
-        print("Oikeat pisteet")
-        [print(player.points) for player in correct_top]
 
         find_top = [str(player) for player in find_top]
         correct_top = [str(player) for player in correct_top]
