@@ -8,8 +8,8 @@ logger("aloitetaan ohjelma")  # muutos mainissa
 
 x = int(input("luku 1: "))
 y = int(input("luku 2: "))
-print(f"{summa(x, y)}")
-print(f"{erotus(x, y)}")
+print(f"{x} + {y} = {summa(x, y)}")  # muutos mainissa
+print(f"{x} - {y} = {erotus(x, y)}")  # muutos mainissa
 
 logger("lopetetaan ohjelma")
 print("goodbye!")  # lisäys bugikorjaus-branchissa
