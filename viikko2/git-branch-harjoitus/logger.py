@@ -1,4 +1,5 @@
 from datetime import datetime
 
 def logger(viesti):
-  print(f"{datetime.now()}: {viesti}")
+    """Tulostaa asioita"""
+    print(f"{datetime.now()}: {viesti}")
