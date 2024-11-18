@@ -8,6 +8,7 @@ ${DELAY}         0.5 seconds
 ${HOME_URL}      http://${SERVER}
 ${LOGIN_URL}     http://${SERVER}/login
 ${REGISTER_URL}  http://${SERVER}/register
+${OHTU_URL}      http://${SERVER}/ohtu
 ${BROWSER}       chrome
 ${HEADLESS}      false
 
@@ -35,8 +36,30 @@ Main Page Should Be Open
 Register Page Should Be Open
     Title Should Be  Register
 
+Welcome Page Should Be Open
+    Title Should Be  Welcome to Ohtu Application!
+
 Go To Login Page
     Go To  ${LOGIN_URL}
 
 Go To Starting Page
     Go To  ${HOME_URL}
+
+Go To Register Page
+    Go To  ${REGISTER_URL}
+
+Login Should Succeed
+    Main Page Should Be Open
+
+Login Should Fail With Message
+    [Arguments]  ${message}
+    Login Page Should Be Open
+    Page Should Contain  ${message}
+
+Set Username
+    [Arguments]  ${username}
+    Input Text  username  ${username}
+
+Set Password
+    [Arguments]  ${password}
+    Input Password  password  ${password}
