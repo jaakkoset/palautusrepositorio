@@ -4,9 +4,43 @@ from kauppa import Kauppa
 from viitegeneraattori import Viitegeneraattori
 
 
+class ViitegeneraattoriStub:
+    def uusi(self):
+        return 1337
+
+
 class TestKauppa(unittest.TestCase):
     def setUp(self):
         pass
+
+    def test_kutsutaan_pankki_oma_versio_Stub(self):
+        """Oma kokeilu"""
+        pankki_mock = Mock()
+        viitegeneraattori_mock = ViitegeneraattoriStub()
+
+        kauppa = Kauppa(pankki_mock, viitegeneraattori_mock)
+
+        kauppa.aloita_ostokset()
+        kauppa.lisaa_ostos(5)
+        kauppa.lisaa_ostos(5)
+        kauppa.maksa("Tilinumero")
+
+        pankki_mock.maksa.assert_called_with("Tilinumero", 10, 1337)
+
+    def test_kutsutaan_pankki_oma_versio_return_value(self):
+        """Oma kokeilu"""
+        pankki_mock = Mock()
+        viitegeneraattori_mock = Mock()
+        viitegeneraattori_mock.uusi.return_value = 1337
+
+        kauppa = Kauppa(pankki_mock, viitegeneraattori_mock)
+
+        kauppa.aloita_ostokset()
+        kauppa.lisaa_ostos(5)
+        kauppa.lisaa_ostos(5)
+        kauppa.maksa("1111")
+
+        pankki_mock.maksa.assert_called_with("1111", 10, 1337)
 
     def test_kutsutaan_pankki(self):
         pankki_mock = Mock()
