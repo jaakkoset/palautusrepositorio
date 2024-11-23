@@ -1,0 +1,5 @@
+# Retrospektiivitekniikat
+
+Start, Stop, Continue, More of, Less of Wheel -retrospektiivitekniikassa piirretään paperille ympyrä, joka jaetaan osiin, jotka nimetään start, stop, continue, more of tai less of. Retrospektiivin vetäjä kysyy tiimiläisiltä mielipiteitä viiteen kysymykseen: mitä heidän pitäisi alkaa tekemään; minkä tekeminen kannattaisi lopettaa; minkä tekeminen toimii ja kannattaa jatkaa; mitä pitäisi tehdä enemmän; mitä pitäisi tehdä vähemmän. Kommentit kirjoitetaan ympyrään niitä vastaavaan osaa. Aikaa varataan 10 – 25 minuuttia.
+
+Glad, Sad, Mad -tekniikassa tiimiläiset kirjoittavat ongelmia, muutoksia tai huomioita sprintistä ja tiimistä paperilapuille. Sitten jokainen tiimiläinen selittää hyvin lyhyesti korttinsa muille. Valkotaulu jaetaan glad, sad ja mad -osioihin ja kaikki kortit laitetaan johonkin osioon. Mad-osio on varattu tiimin ulkopuolisille asioille, jotka vaikuttivat sprintin aikaiseen työskentelyyn. Samanlaiset kortit jaotellaan yhteen ja sitten tiimiläiset äänestävät aiheet tärkeysjärjestykseen. Lopuksi aiheista keskustellaan tärkeysjärjestyksessä kunnes kaikki aiheet on käyty läpi tai aika loppuu. Yhteensä aikaa on varattu tunti.
